@@ -1,6 +1,10 @@
 ﻿namespace AvansTs.pipeline
 {
-    internal class Tests
+    abstract class Tests : DevAction
     {
+        public void accept(IDevPipe devPipe)
+        {
+            devPipe.visit(this);
+        }
     }
 }

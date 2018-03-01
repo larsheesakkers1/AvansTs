@@ -1,6 +1,12 @@
-﻿namespace AvansTs.pipeline
+﻿using System;
+
+namespace AvansTs.pipeline
 {
-    internal class Builds
+    abstract class Builds : DevAction
     {
+        public void accept(IDevPipe devPipe)
+        {
+            devPipe.visit(this);
+        }
     }
 }

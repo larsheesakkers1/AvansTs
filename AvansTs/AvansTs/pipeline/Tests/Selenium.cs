@@ -1,6 +1,10 @@
 ﻿namespace AvansTs.pipeline.Test
 {
-    internal class Selenium
+    internal class Selenium : Tests
     {
+        public void accept()
+        {
+
+        }
     }
 }

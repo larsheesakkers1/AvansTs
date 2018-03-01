@@ -1,6 +1,10 @@
 ﻿namespace AvansTs.pipeline.Deploy
 {
-    internal class Heroku
+    internal class Heroku : Deploys
     {
+        public void accept()
+        {
+
+        }
     }
 }

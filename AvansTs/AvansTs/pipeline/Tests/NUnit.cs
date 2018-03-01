@@ -1,6 +1,10 @@
 ﻿namespace AvansTs.pipeline.Test
 {
-    internal class NUnit
+    internal class NUnit : Tests
     {
+        public void accept()
+        {
+
+        }
     }
 }
