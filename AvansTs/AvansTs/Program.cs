@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace AvansTs
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Invoker invoker = new Invoker();
             Receiver receiver = new Receiver();

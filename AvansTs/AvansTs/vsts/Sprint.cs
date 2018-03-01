@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.vsts
 {
-    internal interface IBackLog
+    internal class Sprint : IBackLog
     {
     }
 }

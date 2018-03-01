@@ -1,6 +1,6 @@
 ﻿namespace AvansTs
 {
-    internal class Project
+    internal class User
     {
     }
 }
