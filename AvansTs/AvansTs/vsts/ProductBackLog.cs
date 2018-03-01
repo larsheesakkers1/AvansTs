@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.vsts
 {
-    internal class ProductBackLog
+    internal class ProductBackLog : IBackLog
     {
     }
 }

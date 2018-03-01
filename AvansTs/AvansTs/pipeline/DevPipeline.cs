@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.pipeline
 {
-    internal class DevPipeline
+    internal class DevPipeline : IDevPipe
     {
     }
 }

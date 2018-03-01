@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.vsts._BackLogItems
 {
-    internal class ConcreteTaskObserver
+    internal class ConcreteTaskObserver : ITaskObserver
     {
     }
 }

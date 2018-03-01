@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.vsts._BackLogItems._State
 {
-    internal class Done
+    internal class Done : IState
     {
     }
 }
