@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AvansTs.version
 {
-    class Version
+    abstract class Version
     {
     }
 }
