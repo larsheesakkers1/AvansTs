@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AvansTs.pipeline
+﻿namespace AvansTs.pipeline
 {
-    class Builds
+    internal class Builds
     {
     }
 }
