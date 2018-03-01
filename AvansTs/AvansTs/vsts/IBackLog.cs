@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AvansTs
+namespace AvansTs.vsts
 {
-    class Program
+    interface IBackLog
     {
-        static void Main(string[] args)
-        {
-            
-        }
     }
 }

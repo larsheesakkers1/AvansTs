@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AvansTs
+namespace AvansTs.version
 {
-    class Program
+    class Version
     {
-        static void Main(string[] args)
-        {
-            
-        }
     }
 }

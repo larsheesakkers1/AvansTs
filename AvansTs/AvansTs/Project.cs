@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace AvansTs
 {
-    class Program
+    class Project
     {
-        static void Main(string[] args)
-        {
-            
-        }
     }
 }
