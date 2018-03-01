@@ -8,5 +8,8 @@ namespace AvansTs.version
 {
     class Receiver
     {
+        public void test() {
+            Console.WriteLine("Test");
+        }
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AvansTs.version
 {
-    interface Command
+    public interface Command
     {
+        void execute();
+        void undo();
     }
 }

@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace AvansTs.version
 {
-    class Concrete
+    class Concrete : Command
     {
+        Receiver receiver;
+
+        public Concrete(Receiver receiver) {
+            this.receiver = receiver;
+        }
+        public void execute()
+        {
+            // receiver method
+            receiver.test();
+        }
+
+        public void undo()
+        {
+            // receiver method
+            throw new NotImplementedException();
+        }
     }
 }
