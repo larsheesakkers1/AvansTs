@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AvansTs.vsts;
 
 namespace AvansTs
 {
@@ -29,6 +30,11 @@ namespace AvansTs
             {
                 it.accept(pipe);
             }
+            Rapport rap = new SaveDocx();
+            rap = new Footer(rap);
+            rap = new Header(rap);
+            Console.WriteLine(rap.Getlayout());
+            Console.WriteLine("s");
         }
     }
 }
