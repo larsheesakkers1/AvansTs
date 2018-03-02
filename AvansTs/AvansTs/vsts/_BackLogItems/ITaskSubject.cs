@@ -1,6 +1,9 @@
 ﻿namespace AvansTs.vsts._BackLogItems
 {
-    internal interface ITaskSubject
+    interface ITaskSubject
     {
+        void registerObserver(ITaskObserver o);
+        void removeObserver(ITaskObserver o);
+        void notifyObservers();
     }
 }

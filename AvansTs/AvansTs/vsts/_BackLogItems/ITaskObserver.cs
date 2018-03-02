@@ -2,5 +2,6 @@
 {
     internal interface ITaskObserver
     {
+        void update();
     }
 }
