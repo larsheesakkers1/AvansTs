@@ -2,5 +2,8 @@
 {
     internal interface IState
     {
+        IState doing();
+        IState done();
+        IState todo();
     }
 }
