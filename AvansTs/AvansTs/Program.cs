@@ -31,15 +31,22 @@ namespace AvansTs
             //    it.accept(pipe);
             //}
 
-            Tasks task = new Tasks();
-            Console.WriteLine(task.state);
-            task.onDoing();
-            task.onToDo();
-            Console.WriteLine(task.state);
-            task.onDone();
-            Console.WriteLine(task.state);
+            //Tasks task = new Tasks();
+            //Console.WriteLine(task.state);
+            //task.onDoing();
+            //task.onToDo();
+            //Console.WriteLine(task.state);
+            //task.onDone();
+            //Console.WriteLine(task.state);
 
-            Console.WriteLine(task.state);
+            //Console.WriteLine(task.state);
+
+            Tasks task = new Tasks();
+            ConcreteTaskObserver conc = new ConcreteTaskObserver(task);
+            ConcreteTaskObserver conc1 = new ConcreteTaskObserver(task);
+            ConcreteTaskObserver conc2 = new ConcreteTaskObserver(task);
+            ConcreteTaskObserver conc3 = new ConcreteTaskObserver(task);
+            task.notifyObservers();
         }
     }
 }
