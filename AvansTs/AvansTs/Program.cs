@@ -16,7 +16,7 @@ namespace AvansTs
         private static void Main(string[] args)
         {
             Project newproject = new Project();
-            newproject.init();
+            newproject.init("testProject");
             //Invoker invoker = new Invoker();
             //Receiver receiver = new Receiver();
             //Concrete concrete = new Concrete(receiver);

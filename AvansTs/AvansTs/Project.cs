@@ -2,7 +2,7 @@
 {
     internal class Project
     {
-        public void init()
+        public void init(string projectName)
         {
 
         }
