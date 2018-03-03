@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AvansTs.vsts;
+using AvansTs.vsts._Notification;
 
 namespace AvansTs
 {
@@ -14,6 +15,8 @@ namespace AvansTs
     {
         private static void Main(string[] args)
         {
+            Project newproject = new Project();
+            newproject.init();
             //Invoker invoker = new Invoker();
             //Receiver receiver = new Receiver();
             //Concrete concrete = new Concrete(receiver);
@@ -48,6 +51,11 @@ namespace AvansTs
             ConcreteTaskObserver conc2 = new ConcreteTaskObserver(task);
             ConcreteTaskObserver conc3 = new ConcreteTaskObserver(task);
             task.notifyObservers();
+
+            NotificationService NS = NotificationService.getInstance();
+            NS.notify(new Mail(),"Task state is - >" + task.state);
+
+
             Rapport rap = new SaveDocx();
             rap = new Footer(rap);
             rap = new Header(rap);

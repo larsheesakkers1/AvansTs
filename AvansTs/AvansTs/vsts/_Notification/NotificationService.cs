@@ -17,5 +17,10 @@ namespace AvansTs.vsts._Notification
             }
             return uniqueInstance;
         }
+
+        public void notify(INotification n,string message )
+        {
+            n.Notify(message);
+        }
     }
 }
