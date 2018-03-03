@@ -1,4 +1,4 @@
-﻿using AvansTs.vsts._Rapport;
+﻿using AvansTs.vsts;
 
 namespace AvansTs.vsts
 {

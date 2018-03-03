@@ -71,8 +71,8 @@
     <Compile Include="vsts\_BackLogItems\ConcreteTaskObserver.cs" />
     <Compile Include="vsts\_BackLogItems\ITaskSubject.cs" />
     <Compile Include="vsts\_BackLogItems\Item.cs" />
-    <Compile Include="vsts\_BackLogItems\Task.cs" />
     <Compile Include="vsts\_BackLogItems\ITaskObserver.cs" />
+    <Compile Include="vsts\_BackLogItems\Tasks.cs" />
     <Compile Include="vsts\_BackLogItems\_State\Doing.cs" />
     <Compile Include="vsts\_BackLogItems\_State\Done.cs" />
     <Compile Include="vsts\_BackLogItems\_State\IState.cs" />
