@@ -4,16 +4,16 @@ namespace AvansTs.vsts
 {
     public class Header : RapportDecorator
     {
-        Rapport rap;
+        Rapport rapport;
         public Header(Rapport rap)
         {
-            this.rap = rap;
+            this.rapport = rap;
         }
 
 
         public override string Getlayout()
         {
-            return rap.Getlayout() + " casualheader";
+            return rapport.Getlayout() + " casualheader";
         }
     }
 }

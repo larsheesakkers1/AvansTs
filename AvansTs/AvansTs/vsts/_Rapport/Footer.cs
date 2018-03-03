@@ -4,15 +4,15 @@ namespace AvansTs.vsts
 {
     public class Footer : RapportDecorator
     {
-        Rapport rap;
+        Rapport rapport;
         public Footer(Rapport rap)
         {
-            this.rap = rap;
+            this.rapport = rap;
         }
 
         public override string Getlayout()
         {
-            return rap.Getlayout() + " casualFooter";
+            return rapport.Getlayout() + " casualFooter";
         }
     }
 }
