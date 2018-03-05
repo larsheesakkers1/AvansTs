@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AvansTs.vsts._Notification;
+using System;
 
 namespace AvansTs.vsts._BackLogItems
 {
@@ -11,7 +12,8 @@ namespace AvansTs.vsts._BackLogItems
         }
         public void update()
         {
-            Console.WriteLine("Update task");
+            NotificationService NS = NotificationService.getInstance();
+            NS.notify(new Mail(), "Task state is - >" + this.task.getState());
         }
     }
 }

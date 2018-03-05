@@ -51,5 +51,9 @@ namespace AvansTs.vsts._BackLogItems
             setState(this.state.done());
         }
 
+        public IState getState()
+        {
+            return this.state;
+        }
     }
 }

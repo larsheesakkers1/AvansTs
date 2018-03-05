@@ -46,21 +46,16 @@ namespace AvansTs
 
             //Console.WriteLine(task.state);
 
-            //Tasks task = new Tasks();
-            //ConcreteTaskObserver conc = new ConcreteTaskObserver(task);
-            //ConcreteTaskObserver conc1 = new ConcreteTaskObserver(task);
-            //ConcreteTaskObserver conc2 = new ConcreteTaskObserver(task);
-            //ConcreteTaskObserver conc3 = new ConcreteTaskObserver(task);
-            //task.notifyObservers();
+            Tasks task = new Tasks("","");
+            ConcreteTaskObserver conc = new ConcreteTaskObserver(task);
+            task.onDoing();
+            task.onDone();
+            task.notifyObservers();
 
-            //NotificationService NS = NotificationService.getInstance();
-            //NS.notify(new Mail(),"Task state is - >" + task.state);
-
-
-            Rapport rap = new SaveDocx();
-            rap = new Footer(rap);
-            rap = new Header(rap);
-            Console.WriteLine(rap.Getlayout());
+            //Rapport rap = new SaveDocx();
+            //rap = new Footer(rap);
+            //rap = new Header(rap);
+            //Console.WriteLine(rap.Getlayout());
         }
     }
 }
