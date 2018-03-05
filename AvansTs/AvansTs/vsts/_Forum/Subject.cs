@@ -12,5 +12,10 @@ namespace AvansTs.vsts._Forum
             this.threats = threats;
             this.backlogItem = backlogItem;
         }
+
+        private bool isAvailble()
+        {
+            return backlogItem.getState() != "done";
+        }
     }
 }
