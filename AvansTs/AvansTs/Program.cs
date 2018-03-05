@@ -22,18 +22,19 @@ namespace AvansTs
             //Concrete concrete = new Concrete(receiver);
             //invoker.setCommand(concrete);
             //invoker.buttonWasPressed();
-            //List<DevAction> iterator = new List<DevAction>();
 
-            //iterator.Add(new Source());
-            //iterator.Add(new Utility());
-            //iterator.Add(new Package());
+            List<DevAction> iterator = new List<DevAction>();
 
-            //DevPipeline pipe = new DevPipeline();
+            iterator.Add(new Source());
+            iterator.Add(new Utility());
+            iterator.Add(new Package());
 
-            //foreach (var it in iterator)
-            //{
-            //    it.accept(pipe);
-            //}
+            DevPipeline pipe = new DevPipeline();
+
+            foreach (var it in iterator)
+            {
+                it.accept(pipe);
+            }
 
             //Tasks task = new Tasks();
             //Console.WriteLine(task.state);

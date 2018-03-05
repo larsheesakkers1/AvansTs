@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.pipeline
 {
-    internal class Source : DevAction
+    public class Source : DevAction
     {
         public void accept(IDevPipe devPipe)
         {

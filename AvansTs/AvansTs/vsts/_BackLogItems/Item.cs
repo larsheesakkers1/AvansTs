@@ -2,7 +2,7 @@
 
 namespace AvansTs.vsts._BackLogItems
 {
-    internal class Item
+    public class Item
     {
         List<Tasks> tasks = new List<Tasks>();
         private User itemowner;

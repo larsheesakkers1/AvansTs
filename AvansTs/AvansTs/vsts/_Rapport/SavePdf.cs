@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.vsts
 {
-    internal class SavePdf : Rapport
+    public class SavePdf : Rapport
     {
         public SavePdf()
         {

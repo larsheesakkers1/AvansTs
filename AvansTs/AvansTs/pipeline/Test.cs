@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.pipeline
 {
-    abstract class Tests : DevAction
+    public abstract class Tests : DevAction
     {
         public void accept(IDevPipe devPipe)
         {

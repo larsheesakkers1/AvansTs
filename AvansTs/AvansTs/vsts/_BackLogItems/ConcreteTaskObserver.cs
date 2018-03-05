@@ -2,7 +2,7 @@
 
 namespace AvansTs.vsts._BackLogItems
 {
-    internal class ConcreteTaskObserver : ITaskObserver
+    public class ConcreteTaskObserver : ITaskObserver
     {
         private ITaskSubject task;
         public ConcreteTaskObserver(ITaskSubject task) {

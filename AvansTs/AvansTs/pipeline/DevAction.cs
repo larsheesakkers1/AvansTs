@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.pipeline
 {
-    interface DevAction
+    public interface DevAction
     {
         void accept(IDevPipe devPipe);
     }

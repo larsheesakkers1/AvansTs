@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AvansTs.version
 {
-    class Concrete : Command
+    public class Concrete : Command
     {
         Receiver receiver;
 

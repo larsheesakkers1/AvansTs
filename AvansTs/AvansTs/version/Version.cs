@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.version
 {
-    internal abstract class Version
+    public abstract class Version
     {
         public Version() {
             Invoker invoker = new Invoker();

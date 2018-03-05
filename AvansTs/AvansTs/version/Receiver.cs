@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace AvansTs.version
 {
-    class Receiver
+    public class Receiver
     {
         public void test() {
-            Console.WriteLine("Test");
+            Console.WriteLine("Command executed");
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AvansTs.version
 {
-    class Git : Version
+    public class Git : Version
     {
     }
 }

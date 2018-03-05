@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.pipeline
 {
-    internal interface IDevPipe
+    public interface IDevPipe
     {
         void visit(Source source);
         void visit(Package package);

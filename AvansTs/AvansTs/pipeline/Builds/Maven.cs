@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.pipeline.Build
 {
-    internal class Maven : Builds
+    public class Maven : Builds
     {
         public void accept()
         {

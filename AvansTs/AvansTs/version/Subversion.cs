@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AvansTs.version
 {
-    class Subversion : Version
+    public class Subversion : Version
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AvansTs.version
 {
-    class Invoker
+    public class Invoker
     {
         Command command;
 
