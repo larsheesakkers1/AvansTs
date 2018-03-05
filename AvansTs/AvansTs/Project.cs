@@ -47,8 +47,8 @@ namespace AvansTs
                         new Threat("discu2",
                             new List<Reaction>
                             {
-                                new Reaction(ScrumMaster, "good job"),
-                                new Reaction(ScrumMaster, "next time do this")
+                                new Reaction(ScrumMaster, "do this"),
+                                new Reaction(ScrumMaster, "look at this link......")
                             })
                     })
             });
