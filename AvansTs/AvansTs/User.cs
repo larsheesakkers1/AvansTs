@@ -3,7 +3,7 @@ using System.Security.Authentication.ExtendedProtection.Configuration;
 
 namespace AvansTs
 {
-    internal class User
+    public class User
     {
         private string name;
         public string role;
