@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.vsts._BackLogItems._State
 {
-    internal class Doing : IState
+    public class Doing : IState
     {
         public IState doing()
         {

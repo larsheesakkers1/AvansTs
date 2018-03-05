@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.pipeline.Build
 {
-    internal class NetBuilder : Builds
+    public class NetBuilder : Builds
     {
         public void accept() {
 

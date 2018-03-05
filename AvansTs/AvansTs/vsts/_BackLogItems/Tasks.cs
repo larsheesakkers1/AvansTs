@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace AvansTs.vsts._BackLogItems
 {
-    class Tasks : ITaskSubject
+    public class Tasks : ITaskSubject
     {
         private List<ITaskObserver> obs;
         public IState state;

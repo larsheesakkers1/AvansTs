@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.vsts._BackLogItems._State
 {
-    internal interface IState
+    public interface IState
     {
         IState doing();
         IState done();

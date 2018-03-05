@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.vsts._BackLogItems
 {
-    internal interface ITaskObserver
+    public interface ITaskObserver
     {
         void update();
     }

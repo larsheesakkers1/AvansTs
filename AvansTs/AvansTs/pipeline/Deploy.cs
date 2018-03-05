@@ -1,6 +1,6 @@
 ﻿namespace AvansTs.pipeline
 {
-    abstract class Deploys : DevAction
+    public abstract class Deploys : DevAction
     {
         public void accept(IDevPipe devPipe)
         {

@@ -2,7 +2,7 @@
 
 namespace AvansTs.pipeline
 {
-    internal class DevPipeline : IDevPipe
+    public class DevPipeline : IDevPipe
     {
         public void visit(Source source)
         {
