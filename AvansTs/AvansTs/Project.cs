@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 using AvansTs.vsts;
+using AvansTs.vsts._BackLogItems;
 
 namespace AvansTs
 {
@@ -10,15 +10,27 @@ namespace AvansTs
     {
         public void init(string projectName)
         {
-            List<User> userList = new List<User>();
-            List<Sprint> Project = new List<Sprint>();
-            userList.Add(new User("Lars","developer"));
-            userList.Add(new User("Cliff","Scrum Master"));
-            userList.Add(new User("Pascal","Productowner"));
+            var Project = new List<Sprint>();
+            var userList = new List<User>
+            {
+                new User("Lars", "developer"),
+                new User("Cliff", "Scrum Master"),
+                new User("Pascal", "Productowner")
+            };
+            var items1 = new List<Item>
+            {
+                new Item(new List<Tasks>
+                    {
+                        new Tasks("init", "lorem ipsum"),
+                        new Tasks("create", "lorem ipsum")
+                    },
+                    userList[0]
+                )
+            };
 
-            var ScrumMaster = userList.Where(i => i.role == "Scrum Master").SingleOrDefault();
-            Project.Add(new Sprint(ScrumMaster, userList,DateTime.Parse("5/3/2018"), DateTime.Parse("9/3/2018")));
-            
+            var ScrumMaster = userList.SingleOrDefault(i => i.role == "Scrum Master");
+            Project.Add(new Sprint(ScrumMaster, userList, items1, DateTime.Parse("5/3/2018"),
+                DateTime.Parse("9/3/2018")));
         }
     }
 }
