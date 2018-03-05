@@ -1,6 +1,7 @@
 ﻿namespace AvansTs.vsts
 {
-    internal class RapportDecorator
+    public abstract class RapportDecorator : Rapport
     {
+        // public abstract string Getlayout();
     }
 }

@@ -9,7 +9,7 @@ namespace AvansTs.vsts._BackLogItems
         private List<ITaskObserver> obs;
         public IState state;
 
-        public Tasks() {
+        public Tasks(string name,string description) {
             this.state = new ToDo();
             obs = new List<ITaskObserver>();
         }

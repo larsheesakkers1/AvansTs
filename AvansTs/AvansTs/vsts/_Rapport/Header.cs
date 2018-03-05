@@ -1,6 +1,19 @@
-﻿namespace AvansTs.vsts
+﻿using System;
+
+namespace AvansTs.vsts
 {
-    internal class Header
+    public class Header : RapportDecorator
     {
+        Rapport rapport;
+        public Header(Rapport rap)
+        {
+            this.rapport = rap;
+        }
+
+
+        public override string Getlayout()
+        {
+            return rapport.Getlayout() + " casualheader";
+        }
     }
 }

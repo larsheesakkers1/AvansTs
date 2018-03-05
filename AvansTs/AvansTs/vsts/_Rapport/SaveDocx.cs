@@ -1,6 +1,10 @@
 ﻿namespace AvansTs.vsts
 {
-    internal class SaveDocx
+    internal class SaveDocx : Rapport
     {
+        public SaveDocx()
+        {
+            rap = "rapportcontentdocx";
+        }
     }
 }

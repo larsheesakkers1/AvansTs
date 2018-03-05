@@ -1,6 +1,7 @@
 ﻿namespace AvansTs.vsts._Notification
 {
-    internal class Notification
+    public interface INotification
     {
+        bool Notify(string message);
     }
 }
