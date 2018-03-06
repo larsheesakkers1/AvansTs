@@ -12,8 +12,9 @@ namespace AvansTs.vsts._BackLogItems
         }
         public void update()
         {
-            NotificationService NS = NotificationService.getInstance();
-            NS.notify(new Mail(), "Task state is - >" + this.task.getState());
+        //    NotificationService NS = NotificationService.getInstance();
+           // NS.notify(new Mail(), "Task state is - >" + this.task.getState());
+            Console.WriteLine("Send message");
         }
     }
 }

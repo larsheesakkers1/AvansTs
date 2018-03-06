@@ -6,6 +6,7 @@ using AvansTs.version;
 using System.Collections.Generic;
 using AvansTs.pipeline;
 using AvansTs.vsts;
+using AvansTs.vsts._Rapport;
 
 namespace UnitTestAvansTs
 {
@@ -18,8 +19,7 @@ namespace UnitTestAvansTs
             var currentConsoleOut = Console.Out;
             Tasks task = new Tasks("","");
             ConcreteTaskObserver conc = new ConcreteTaskObserver(task);
-            string text = "Update task\r\n";
-            
+            string text = "Send message\r\n";
             using (var consoleOutput = new ConsoleOutput())
             {
                 task.notifyObservers();
@@ -89,10 +89,10 @@ namespace UnitTestAvansTs
         [TestMethod]
         public void TestMethodDecorator()
         {
-            Rapport rap = new SaveDocx();
+            Rapport rap = new Content();
             rap = new Footer(rap);
             rap = new Header(rap);
-            Assert.AreEqual("rapportcontentdocx casualFooter casualheader", rap.Getlayout());
+            Assert.AreEqual("content casualFooter casualheader", rap.Getlayout());
         }
     }
 }

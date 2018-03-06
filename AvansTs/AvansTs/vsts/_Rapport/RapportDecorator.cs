@@ -2,6 +2,6 @@
 {
     public abstract class RapportDecorator : Rapport
     {
-        // public abstract string Getlayout();
+        public abstract override string Getlayout();
     }
 }

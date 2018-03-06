@@ -13,9 +13,9 @@ namespace AvansTs.vsts._Forum
             this.backlogItem = backlogItem;
         }
 
-        private bool isAvailble()
+        private bool isAvailable()
         {
-            return backlogItem.getState() != "done";
+            return backlogItem.getState() != "Done";
         }
     }
 }
