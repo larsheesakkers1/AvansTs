@@ -8,7 +8,7 @@ namespace AvansTs.version
 {
     public class Receiver
     {
-        public void test() {
+        public void run() {
             Console.WriteLine("Command executed");
         }
     }

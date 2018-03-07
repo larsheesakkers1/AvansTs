@@ -1,10 +1,13 @@
-﻿namespace AvansTs.vsts
+﻿using System;
+using AvansTs.vsts._Rapport;
+
+namespace AvansTs.vsts
 {
-    public class SaveDocx : Rapport
+    public class SaveDocx : Isave
     {
-        public SaveDocx()
+        public void save(Rapport rap)
         {
-            rap = "rapportcontentdocx";
+            Console.WriteLine(rap);
         }
     }
 }

@@ -91,6 +91,7 @@
     <Compile Include="vsts\_Rapport\Header.cs" />
     <Compile Include="vsts\IBackLog.cs" />
     <Compile Include="vsts\ProductBackLog.cs" />
+    <Compile Include="vsts\_Rapport\Isave.cs" />
     <Compile Include="vsts\_Rapport\Rapport.cs" />
     <Compile Include="vsts\_Rapport\RapportDecorator.cs" />
     <Compile Include="vsts\_Rapport\SaveDocx.cs" />

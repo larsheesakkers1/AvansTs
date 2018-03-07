@@ -16,7 +16,7 @@ namespace AvansTs.version
         public void execute()
         {
             // receiver method
-            receiver.test();
+            receiver.run();
         }
 
         public void undo()

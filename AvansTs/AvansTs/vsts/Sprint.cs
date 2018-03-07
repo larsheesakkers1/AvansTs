@@ -60,7 +60,7 @@ namespace AvansTs.vsts
             }
 
             
-             NotificationService NS = NotificationService.getInstance();
+            NotificationService NS = NotificationService.getInstance();
             NS.notify(new Slack(), "The release has been succesfull");
             onComplete();
         }

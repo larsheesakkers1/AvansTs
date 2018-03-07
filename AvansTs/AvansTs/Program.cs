@@ -36,7 +36,7 @@ namespace AvansTs
                     userList[0]
                 );
             sprintItems.Add(items1);
-            var ScrumMaster = userList.SingleOrDefault(i => i.role == "Scrum Master");
+            var ScrumMaster = userList.SingleOrDefault(i => i.getRole() == "Scrum Master");
             Project.Add(new Sprint(ScrumMaster, userList, sprintItems, DateTime.Parse("5/3/2018"),
                 DateTime.Parse("9/3/2018")));
 

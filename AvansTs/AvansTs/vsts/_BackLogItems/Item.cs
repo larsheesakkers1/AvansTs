@@ -10,6 +10,7 @@ namespace AvansTs.vsts._BackLogItems
         public List<Tasks> tasks = new List<Tasks>();
         private User itemowner;
         private string state;
+
         public Item(List<Tasks> tasks,User user)
         {
             this.itemowner = user;
