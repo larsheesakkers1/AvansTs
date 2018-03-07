@@ -1,13 +1,12 @@
-﻿using AvansTs.vsts;
-
-namespace AvansTs.vsts
+﻿namespace AvansTs.vsts
 {
     public class Footer : RapportDecorator
     {
-        Rapport rapport;
+        private readonly Rapport rapport;
+
         public Footer(Rapport rap)
         {
-            this.rapport = rap;
+            rapport = rap;
         }
 
         public override string Getlayout()

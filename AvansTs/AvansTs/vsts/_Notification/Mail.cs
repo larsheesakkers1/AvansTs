@@ -15,7 +15,6 @@ namespace AvansTs.vsts._Notification
             {
                 return false;
             }
-
         }
     }
 }

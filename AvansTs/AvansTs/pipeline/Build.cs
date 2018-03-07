@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AvansTs.pipeline
+﻿namespace AvansTs.pipeline
 {
     public abstract class Builds : DevAction
     {

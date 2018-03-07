@@ -2,11 +2,12 @@
 {
     public abstract class Version
     {
-        public Version() {
-            Invoker invoker = new Invoker();
-            Receiver receiver = new Receiver();
-            Concrete concrete = new Concrete(receiver);
+        public Version()
+        {
+            var invoker = new Invoker();
+            var receiver = new Receiver();
+            var concrete = new Concrete(receiver);
             invoker.setCommand(concrete);
-        }  
+        }
     }
 }

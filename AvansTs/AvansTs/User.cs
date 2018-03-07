@@ -1,12 +1,9 @@
-﻿using System.Runtime.CompilerServices;
-using System.Security.Authentication.ExtendedProtection.Configuration;
-
-namespace AvansTs
+﻿namespace AvansTs
 {
     public class User
     {
         private string name;
-        private string role;
+        private readonly string role;
 
         public User(string name, string role)
         {
@@ -16,7 +13,7 @@ namespace AvansTs
 
         public string getRole()
         {
-           return role;
+            return role;
         }
     }
 }

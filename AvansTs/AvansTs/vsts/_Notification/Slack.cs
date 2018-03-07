@@ -2,7 +2,7 @@
 
 namespace AvansTs.vsts._Notification
 {
-    internal class Slack :INotification
+    internal class Slack : INotification
     {
         public bool Notify(string message)
         {
@@ -15,7 +15,6 @@ namespace AvansTs.vsts._Notification
             {
                 return false;
             }
-           
         }
     }
 }

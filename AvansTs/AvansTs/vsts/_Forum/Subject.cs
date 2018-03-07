@@ -5,9 +5,10 @@ namespace AvansTs.vsts._Forum
 {
     internal class Subject
     {
-        private Item backlogItem;
+        private readonly Item backlogItem;
         private List<Threat> threats;
-        public Subject(Item backlogItem,List<Threat> threats)
+
+        public Subject(Item backlogItem, List<Threat> threats)
         {
             this.threats = threats;
             this.backlogItem = backlogItem;

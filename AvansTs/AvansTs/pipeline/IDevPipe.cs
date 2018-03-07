@@ -8,6 +8,5 @@
         void visit(Tests test);
         void visit(Deploys deploy);
         void visit(Utility utility);
-
     }
 }

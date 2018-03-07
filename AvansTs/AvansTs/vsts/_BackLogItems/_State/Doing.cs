@@ -1,10 +1,12 @@
-﻿namespace AvansTs.vsts._BackLogItems._State
+﻿using System;
+
+namespace AvansTs.vsts._BackLogItems._State
 {
     public class Doing : IState
     {
         public IState doing()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public IState done()
@@ -14,7 +16,7 @@
 
         public IState todo()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

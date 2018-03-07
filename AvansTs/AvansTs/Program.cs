@@ -1,14 +1,9 @@
-﻿using AvansTs.pipeline;
-using AvansTs.version;
-using AvansTs.vsts._BackLogItems;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AvansTs.vsts;
+using AvansTs.vsts._BackLogItems;
 using AvansTs.vsts._Forum;
-using AvansTs.vsts._Notification;
 
 namespace AvansTs
 {
@@ -60,7 +55,7 @@ namespace AvansTs
                             })
                     })
             });
-        
+
             Project[0].onFinished();
             //Invoker invoker = new Invoker();
             //Receiver receiver = new Receiver();

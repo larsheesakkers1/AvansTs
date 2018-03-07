@@ -2,8 +2,8 @@
 {
     public class NetBuilder : Builds
     {
-        public void accept() {
-
+        public void accept()
+        {
         }
     }
 }

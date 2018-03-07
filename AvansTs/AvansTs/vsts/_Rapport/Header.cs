@@ -1,13 +1,12 @@
-﻿using System;
-
-namespace AvansTs.vsts
+﻿namespace AvansTs.vsts
 {
     public class Header : RapportDecorator
     {
-        Rapport rapport;
+        private readonly Rapport rapport;
+
         public Header(Rapport rap)
         {
-            this.rapport = rap;
+            rapport = rap;
         }
 
 

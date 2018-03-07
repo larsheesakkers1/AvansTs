@@ -1,16 +1,17 @@
-﻿using AvansTs.vsts._BackLogItems._State;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using AvansTs.vsts._BackLogItems._State;
 
 namespace AvansTs.vsts._BackLogItems
 {
     public class Tasks : ITaskSubject
     {
-        private List<ITaskObserver> obs;
+        private readonly List<ITaskObserver> obs;
         public IState state;
 
-        public Tasks(string name,string description) {
-            this.state = new ToDo();
+        public Tasks(string name, string description)
+        {
+            state = new ToDo();
             obs = new List<ITaskObserver>();
         }
 
@@ -26,34 +27,39 @@ namespace AvansTs.vsts._BackLogItems
 
         public void notifyObservers()
         {
-            for (int i = 0; i < obs.Count; i++)
+            for (var i = 0; i < obs.Count; i++)
             {
-                ITaskObserver observer = obs[i];
+                var observer = obs[i];
                 observer.update();
             }
-        }
-        private void setState(IState state) {
-            this.state = state;
-        }
-
-        public void onDoing() {
-            Console.WriteLine("Doing");
-            setState(this.state.doing());
-        }
-        public void onToDo()
-        {
-            Console.WriteLine("ToDo");
-            setState(this.state.todo());
-        }
-        public void onDone()
-        {
-            Console.WriteLine("Done");
-            setState(this.state.done());
         }
 
         public IState getState()
         {
-            return this.state;
+            return state;
+        }
+
+        private void setState(IState state)
+        {
+            this.state = state;
+        }
+
+        public void onDoing()
+        {
+            Console.WriteLine("Doing");
+            setState(state.doing());
+        }
+
+        public void onToDo()
+        {
+            Console.WriteLine("ToDo");
+            setState(state.todo());
+        }
+
+        public void onDone()
+        {
+            Console.WriteLine("Done");
+            setState(state.done());
         }
     }
 }

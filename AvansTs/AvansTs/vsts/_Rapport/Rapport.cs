@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AvansTs.vsts
+﻿namespace AvansTs.vsts
 {
     public abstract class Rapport
     {
